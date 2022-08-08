@@ -1,0 +1,26 @@
+1. Open a new tab and download the latest Intune PowerShell scripts from https://github.com/microsoftgraph/powershell-intune-samples. 
+   Save the .zip file into the downloads folder. Right-click on the powershell-intune-samples-master zip file and select 
+   Extract all > Extract.
+   
+2. Run PowerShell as an Administrator and accept the UAC popup. 
+   Run Set-ExecutionPolicy Bypass.
+   
+3. Run Install-Module AzureAD. Approve installing the module.
+
+4. Run cd C:\Users\*YourUserAccount*\Downloads\powershell-intune-samples-master\powershell-intune-samples-master\DeviceConfiguration
+
+5. Run .\DeviceConfiguration_Export.ps1
+
+6. Sign-in using your Intune administrator account. Select the checkbox to consent on behalf of your organization and click Accept.
+
+7. The next step is to provide the export location. 
+   Run C:\Users\*YourUserAccount*\Downloads\powershell-intune-samples-master\powershell-intune-samples-master\DeviceConfiguration
+   
+8. Run .\DeviceConfiguration_Import_FromJSON.ps1
+
+9. Open the C:\Users\*YourUserAccount*\Downloads\powershell-intune-samples-master\powershell-intune-samples-master\DeviceConfiguration folder.
+   While holding shift, copy as path the configuration profile. Paste into the PowerShell window.
+   
+10. Navigate back to the Azure Portal.
+
+11. On the left navigation bar, click All Services > Intune. Click on Device Configuration and verify the profiles are duplicated. Since I reused my same tenant for this demo, I’ll see that the Autopilot Reset profile is duplicated:
