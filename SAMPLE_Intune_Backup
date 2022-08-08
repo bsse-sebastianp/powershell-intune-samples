@@ -22,6 +22,8 @@
 7. The next step is to provide the export location. 
    Run C:\Users\*YourUserAccount*\Downloads\powershell-intune-samples-master\powershell-intune-samples-master\DeviceConfiguration
    
+   Now all of our settings are exported! We’ll follow the same general process for importing, except specifying the exported JSON file.
+   
 8. Run .\DeviceConfiguration_Import_FromJSON.ps1
 
 9. Open the C:\Users\*YourUserAccount*\Downloads\powershell-intune-samples-master\powershell-intune-samples-master\DeviceConfiguration folder.
