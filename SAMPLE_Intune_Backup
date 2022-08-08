@@ -8,6 +8,12 @@
 3. Run Install-Module AzureAD. Approve installing the module.
 
 4. Run cd C:\Users\*YourUserAccount*\Downloads\powershell-intune-samples-master\powershell-intune-samples-master\DeviceConfiguration
+   
+   Info:
+   >----------------------------------------------------------------------------------------------------------------------------------<
+   >If you’re looking to export other content from Intune, you would select another folder during this step and run that corresponding< 
+   >PowerShell script. Other options here include Company Portal Branding, Enrollment Restrictions, and Terms and Conditions.         <
+   >----------------------------------------------------------------------------------------------------------------------------------<
 
 5. Run .\DeviceConfiguration_Export.ps1
 
